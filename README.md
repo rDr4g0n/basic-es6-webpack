@@ -29,3 +29,4 @@ The bundle will end up in the `dist` dir. You can make the code publicly availab
 - [webpack-dev-server](https://webpack.js.org/guides/development/#using-webpack-dev-server)
 - [babel + webpack](https://babeljs.io/setup#installation)
 - [corejs + regenerator runtime + babel](https://github.com/zloirock/core-js#babel) to polyfill es6
+- [HTML Webpack Plugin](https://webpack.js.org/plugins/html-webpack-plugin/) to put webpack bundle into an html file

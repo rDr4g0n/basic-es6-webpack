@@ -13,4 +13,5 @@ async function swapALot(){
   swapALot();
 }
 
+swap();
 swapALot();
