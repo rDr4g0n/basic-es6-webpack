@@ -21,9 +21,14 @@ Also, webpack provides a dev server which compiles your bundle and updates it ea
 
 New JavaScript language features keep coming out but browsers cant keep up with em. Babel tries its best to transpile "new" JavaScript to older JavaScript which works in more browsers and environments. `babel.config.json` configures babel. It's another nightmare place, don't go there.
 
+- [babel + webpack](https://babeljs.io/setup#installation)
+- [corejs + regenerator runtime + babel](https://github.com/zloirock/core-js#babel) to polyfill es6
+
 ### src/index.ejs
 
 Webpack dynamically generates assets and junk, so your base `index.html` is no longer like "HEY GUYS JUST LOAD MY JAVASCRIPTS FROM INTERNET!". Anyway, just let webpack generate `index.html` for you. HtmlWebpackPlugin do that, and it uses `src/index.ejs` as the template.
+
+- [HTML Webpack Plugin](https://webpack.js.org/plugins/html-webpack-plugin/) to put webpack bundle into an html file
 
 ### src/index.js
 
@@ -54,9 +59,3 @@ The bundle will end up in the `dist` dir. You can make the code publicly availab
     npm run serve:prod
 
 And point your web browser at http://localhost:8080.
-
-## Notes
-
-- [babel + webpack](https://babeljs.io/setup#installation)
-- [corejs + regenerator runtime + babel](https://github.com/zloirock/core-js#babel) to polyfill es6
-- [HTML Webpack Plugin](https://webpack.js.org/plugins/html-webpack-plugin/) to put webpack bundle into an html file
