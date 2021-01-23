@@ -1,6 +1,8 @@
 # ARE YOU ALWAYS MAD AT WEB ECOSYSTEM?
 Sorry.
 
+> NOTE: I did this on nodejs v10x. v12 should be ok too though.
+
 ## Development
 
 Install deps:
@@ -22,6 +24,8 @@ You can build a bundle optimized for production with:
 The bundle will end up in the `dist` dir. You can make the code publicly available somewhere (Amazon S3, GCP Storage Bucket) oooorrr if you want to test the prod build locally, you can serve the build prod fils from a local http server.
 
     npm run serve:prod
+
+And point your web browser at http://localhost:8080.
 
 ## Notes
 

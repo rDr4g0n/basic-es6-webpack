@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --mode=production",
-    "serve:prod": "npx run build && http-serve dist"
+    "serve:prod": "npm run build && npx http-serve dist"
   },
   "author": "",
   "license": "ISC",
